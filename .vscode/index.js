@@ -1,15 +1,15 @@
-var a = 12
-let b =9
-const c = 10
-{
-    let b = 30
-    const c = 40
-    var a = 100
-    console.log(a,b,c);
+console.log("Start");
+setTimeout(() => {
+    console.log("callback");
+}, 4000);
+console.log("End")
+
+let start = new Date().getTime();
+let end = start;
+
+while (end <start +5000) {
+    end = new Date().getTime();
+    // console.log(end);
 }
-console.log(a,b,c);
-console.log(d)
 
-
-
-
+console.log("Hello");
